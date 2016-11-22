@@ -1,0 +1,55 @@
+body, html {
+	height: 100%;
+}
+body {
+	font-family: sans-serif;
+}
+
+#barChart rect {
+}
+#barChart text {
+	fill: white;
+	font: 10px sans-serif;
+	text-anchor: end;
+}
+#barChart text.label {
+	fill: black;
+	font: 10px sans-serif;
+	text-anchor: start;
+}
+
+#map {
+	width: 800px;
+	height: 500px;
+	border: 1px solid #ccc;
+}
+#map canvas {
+}
+#map svg {
+	position: absolute;
+}
+#map svg .dot {
+	stroke: #666;
+	stroke-width: 1;
+}
+.tooltip {
+	font-size: 0.8rem;
+}
+
+#heatChart svg {
+	width: 360px;
+	height: 360px;
+}
+#heatChart path {
+	stroke: #777;
+	stroke-width: 0.1px;
+}
+
+#heatChart .labels {
+	fill: #808080;
+	font-weight: 200;
+	letter-spacing: -1px;
+}
+#heatChart .labels.segment {
+	font-size: 10px;
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DataVis with D3.js</title>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+		<script src="d3-circularheat/js/circularHeatChart.js"></script>
+		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.0/mapbox-gl.js'></script>
+	    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.0/mapbox-gl.css' rel='stylesheet' />
+		<link rel="stylesheet" href="css/charts.css">
+	</head>
+	<body>
+		<h1>Data Visualisation with D3.js and Bristol Open Data API</h1>
+
+		<h2>Cycle collisions in Bristol (2011-2013)</h2>
+		<h3>By day &amp; hour</h3>
+		<div id="heatChart"></div>
+		<br>
+		<br>
+
+		<h2>NO<sub>2</sub> levels in Bristol (2013)</h2>
+		<div id="map"></div>
+		<br>
+		<br>
+
+		<h3>NO<sub>2</sub> data</h3>
+		<button onclick="renderChart('ascending')">Sort ascending</button>
+		<button onclick="renderChart('descending')">Sort descending</button>
+		<br>
+		<svg id="barChart"></svg>
+
+		<script src="no2.js"></script>
+		<script src="cycles.js"></script>
+	</body>
+</html>
