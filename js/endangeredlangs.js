@@ -16,7 +16,7 @@ var colours = [
 ];
 
 // Import JSON data:
-d3.csv("/data/endangered-utf8.csv", function(error, rows) {
+d3.csv("../data/endangered-utf8.csv", function(error, rows) {
     if (error) throw error;
 
     // Extract useful parts from JSON:
