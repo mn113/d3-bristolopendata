@@ -11,15 +11,21 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.18.0/d3-legend.min.js"></script>
 		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.0/mapbox-gl.js'></script>
 	    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.0/mapbox-gl.css' rel='stylesheet' />
-		<link rel="stylesheet" href="css/charts.css">
+		<link rel="stylesheet" href="../css/charts.css">
 	</head>
 	<body>
 		<h1>Data Visualisation with D3.js</h1>
 
-		<ul>
-			<li><a href="pages/bristol-no2.html">NO<sub>2</sub> levels in Bristol</a></li>
-			<li><a href="pages/cycling-accidents.html">Cycle collisions in Bristol</a></li>
-			<li><a href="pages/endangered-langs.html">Endangered Languages</a></li>
-		</ul>
+		<h2>Endangered Languages</h2>
+		<h3>Languages with < 7.5m speakers</h3>
+		<p>Data from <a href="http://www.unesco.org/languages-atlas/index.php">Unesco</a></p>
+		<form>
+			<input id="speakersRange" type="range" min="0" max="7" value="7" step="0,1,2,3,4,5,6,7">
+		</form>
+		<div id="langmap" class="map"></div>
+		<br>
+		<br>
+
+		<script src="../js/endangeredlangs.js"></script>
 	</body>
 </html>

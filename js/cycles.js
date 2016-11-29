@@ -4,7 +4,7 @@ d3.queue()
     .defer(d3.json, 'https://opendata.bristol.gov.uk/resource/yhz4-hcsf.json')
     .defer(d3.json, 'https://opendata.bristol.gov.uk/resource/3zdy-g2u6.json')
     .awaitAll(ready);
-
+/*
 function hourData(error, json) {
     if (error) throw error;
 
@@ -41,6 +41,7 @@ function monthData(error, json) {
     }
     return out;
 }
+*/
 
 // Execute when data available:
 function ready(error, data) {

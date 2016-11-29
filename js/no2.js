@@ -80,7 +80,7 @@ function renderMap() {
     // Define MapBox-GL basemap:
     mapboxgl.accessToken = 'pk.eyJ1IjoibWVlcmthdG9yIiwiYSI6ImNpdXF4Mm91azAwMGEyb21pcDFmN3J5NXcifQ.pW6SQDz9wpFr619vzHtcAA';
     var map = new mapboxgl.Map({
-        container: 'map', // container id
+        container: 'no2map', // container id
         style: 'mapbox://styles/mapbox/light-v9',
         center: [-2.6, 51.46],
         zoom: 12,
@@ -90,7 +90,7 @@ function renderMap() {
 
     // Use the MapBox positioning to define a d3 projection:
     function getD3() {
-        var bbox = document.getElementById('map').getBoundingClientRect();
+        var bbox = document.getElementById('no2map').getBoundingClientRect();
         var center = map.getCenter();
         var zoom = map.getZoom();
         // 512 is hardcoded tile size, might need to be 256 or changed to suit your map config

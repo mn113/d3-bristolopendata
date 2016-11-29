@@ -11,15 +11,22 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.18.0/d3-legend.min.js"></script>
 		<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.0/mapbox-gl.js'></script>
 	    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.12.0/mapbox-gl.css' rel='stylesheet' />
-		<link rel="stylesheet" href="css/charts.css">
+		<link rel="stylesheet" href="../css/charts.css">
 	</head>
 	<body>
 		<h1>Data Visualisation with D3.js</h1>
 
-		<ul>
-			<li><a href="pages/bristol-no2.html">NO<sub>2</sub> levels in Bristol</a></li>
-			<li><a href="pages/cycling-accidents.html">Cycle collisions in Bristol</a></li>
-			<li><a href="pages/endangered-langs.html">Endangered Languages</a></li>
-		</ul>
+		<h2>NO<sub>2</sub> levels in Bristol (2013)</h2>
+		<div id="no2map" class="map"></div>
+		<br>
+		<br>
+
+		<h3>NO<sub>2</sub> data</h3>
+		<button onclick="renderChart('ascending')">Sort ascending</button>
+		<button onclick="renderChart('descending')">Sort descending</button>
+		<br>
+		<svg id="barChart"></svg>
+
+		<script src="../js/no2.js"></script>
 	</body>
 </html>

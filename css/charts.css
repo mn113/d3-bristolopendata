@@ -18,17 +18,15 @@ body {
 	text-anchor: start;
 }
 
-#map {
+.map {
 	width: 800px;
 	height: 500px;
 	border: 1px solid #ccc;
 }
-#map canvas {
-}
-#map svg {
+.map svg {
 	position: absolute;
 }
-#map svg .dot {
+.map svg .dot {
 	stroke: #666;
 	stroke-width: 1;
 }
@@ -52,4 +50,21 @@ body {
 }
 #heatChart .labels.segment {
 	font-size: 10px;
+}
+
+input#speakersRange {
+	width: 800px;
+}
+.legendOrdinal rect {
+	fill: #ffffff;
+	stroke: #666666;
+	stroke-width: 1px;
+	width: 165px;
+	height: 130px;
+	x: -20px;
+	y: -15px;
+}
+.legendOrdinal .swatch {
+	stroke: #333333;
+	stroke-width: 1px;
 }
