@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>DataVis with D3.js</title>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<link rel="stylesheet" href="../css/charts.css">
+	</head>
+	<body>
+		<h1>Data Visualisation with D3.js</h1>
+
+		<h2>Word clouds</h2>
+		<h3>Marge Simpson's most commonly spoken words</h3>
+        <img src="../img/marge.png" style="display: inline-block; width: 250px;">
+		<div id="margeCloud" style="display: inline-block;"></div>
+        <hr>
+        <h3>Ned Flanders</h3>
+		<div id="nedCloud" style="display: inline-block;"></div>
+        <img src="../img/flanders.png" style="display: inline-block; width: 200px;">
+
+        <script src="../js/d3.layout.cloud.js"></script>
+		<script src="../js/wordclouds.js"></script>
+	</body>
+</html>
